@@ -4,8 +4,8 @@ lib LibGL
   fun enable = glEnable(cap : Enum) : Void
 
   # Enables server-side capabilities.
-  fun enable = glEnablei( cap   : Enum,
-                          index : UInt) : Void
+  fun enable_i = glEnablei( cap   : Enum,
+                            index : UInt) : Void
 
   # Enables a generic vertex attribute array.
   fun enable_vertex_attrib_array = glEnableVertexAttribArray(index : UInt) : Void
