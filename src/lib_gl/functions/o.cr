@@ -9,4 +9,11 @@ lib LibGL
   fun object_ptr_label = glObjectPtrLabel(ptr     : Pointer(Void),
                                           length  : Sizei,
                                           label   : Pointer(Char)) : Void
+  # Ortho Transformation
+  fun ortho = glOrtho(left     : Double,
+                      right    : Double,
+                      bottom   : Double,
+                      top      : Double,
+                      near_val : Double,
+                      far_val  : Double) : Void
 end
