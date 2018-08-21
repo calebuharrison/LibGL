@@ -4,7 +4,7 @@ lib LibGL
                             y : Float,
                             z : Float) : Void
 
-  fun vertex2f = glVertex3f(x : Float,
+  fun vertex2f = glVertex2f(x : Float,
                             y : Float) : Void
 
   # Validates a program object.
