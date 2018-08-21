@@ -1,6 +1,6 @@
 lib LibGL
 
-  fun color3f = glColor3f(red : LibC::Int, green : LibC::Int, blue : LibC::Int) : Void
+  fun color3f = glColor3f(red : LibC::Float, green : LibC::Float, blue : LibC::Float) : Void
 
   # Checks the completeness status of a framebuffer.
   fun check_framebuffer_status = glCheckFramebufferStatus(target : Enum) : Enum
