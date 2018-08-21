@@ -1,5 +1,7 @@
 lib LibGL
 
+  fun color3f = glColor3f(red : LibC::Int, green : LibC::Int, blue : LibC::Int) : Void
+
   # Checks the completeness status of a framebuffer.
   fun check_framebuffer_status = glCheckFramebufferStatus(target : Enum) : Enum
 
@@ -99,7 +101,7 @@ lib LibGL
                                   green : Boolean,
                                   blue  : Boolean,
                                   alpha : Boolean) : Void
-  
+
   # Compiles a shader object.
   fun compile_shader = glCompileShader(shader : UInt) : Void
 
@@ -226,7 +228,7 @@ lib LibGL
                                                   y         : Int,
                                                   width     : Sizei,
                                                   height    : Sizei) : Void
-  
+
   # Copies a texture subimage.
   fun copy_tex_sub_image_3d = glCopyTexSubImage3D(target    : Enum,
                                                   level     : Int,
