@@ -1,4 +1,7 @@
 lib LibGL
+
+  fun begin = glBegin(mode  : Enum) : Void
+
   # Begins conditional rendering.
   fun begin_conditional_render = glBeginConditionalRender(id    : UInt,
                                                           mode  : Enum) : Void
@@ -62,8 +65,8 @@ lib LibGL
 
   # Binds a framebuffer to a framebuffer target.
   fun bind_framebuffer = glBindFramebuffer( target      : Enum,
-                                            framebuffer : UInt) : Void                                                
-  
+                                            framebuffer : UInt) : Void
+
   # Binds a level of a texture to an image unit.
   fun bind_image_texture = glBindImageTexture(unit    : UInt,
                                               texture : UInt,
@@ -80,7 +83,7 @@ lib LibGL
 
   # Binds a program pipeline to the current context.
   fun bind_program_pipeline = glBindProgramPipeline(pipeline : UInt) : Void
-  
+
   # Binds a renderbuffer to a renderbuffer target.
   fun bind_renderbuffer = glBindRenderbuffer( target        : Enum,
                                               renderbuffer  : UInt) : Void
@@ -97,7 +100,7 @@ lib LibGL
   # Binds a named texture to a texturing target.
   fun bind_texture = glBindTexture( target  : Enum,
                                     texture : UInt) : Void
-  
+
   # Binds one or more named textures to a sequence of consecutive texture units.
   fun bind_textures = glBindTextures( first     : UInt,
                                       count     : Sizei,
@@ -106,7 +109,7 @@ lib LibGL
   # Binds a transform feedback object.
   fun bind_transform_feedback = glBindTransformFeedback(target  : Enum,
                                                         id      : UInt) : Void
-  
+
   # Binds a vertex array object.
   fun bind_vertex_array = glBindVertexArray(array : UInt) : Void
 

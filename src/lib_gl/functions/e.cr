@@ -1,5 +1,7 @@
 lib LibGL
-  
+
+  fun end = glEnd() : Void
+
   # Enables server-side capabilities.
   fun enable = glEnable(cap : Enum) : Void
 

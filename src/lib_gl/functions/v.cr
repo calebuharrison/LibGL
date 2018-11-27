@@ -1,4 +1,12 @@
 lib LibGL
+
+  fun vertex3f = glVertex3f(x : Float,
+                            y : Float,
+                            z : Float) : Void
+
+  fun vertex2f = glVertex2f(x : Float,
+                            y : Float) : Void
+
   # Validates a program object.
   fun validate_program = glValidateProgram(program : UInt) : Void
 
